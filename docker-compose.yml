@@ -1,0 +1,25 @@
+﻿services:
+  sqlservers:
+    image: "mcr.microsoft.com/mssql/server"
+    user: root
+    volumes:
+      - sqlservers-data:/var/opt/mssql/data
+    environment:
+      SA_PASSWORD: "@Test1234"
+      ACCEPT_EULA: "Y"
+    restart: always
+  congestion-tax-calculator-web-api:
+    image: congestion-tax-calculator-web-api
+    build:
+      context: .
+      dockerfile: src/Hosting/congestion-tax-calculator-web-api/Dockerfile
+    depends_on:
+      - sqlservers
+    ports:
+      - "8080:80"
+    restart: always
+    environment:
+      - DBHOST=sqlservers
+      - ASPNETCORE_ENVIRONMENT=Production
+volumes:
+  sqlservers-data:

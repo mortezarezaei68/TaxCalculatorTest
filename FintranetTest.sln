@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{818EF3BB-D3CA-4BEB-A337-E8249C6DB3E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "congestion-tax-calculator-net-core", "src\Interface\congestion-tax-calculator-net-core\congestion-tax-calculator-net-core.csproj", "{8833D252-B1A1-4DEB-8478-04F8634B6C03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{B09C372D-506C-4839-96FE-42CDBC8766FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "congestion-tax-calculator-web-api", "src\Hosting\congestion-tax-calculator-web-api\congestion-tax-calculator-web-api.csproj", "{B0442220-1A40-4B3C-A3BC-BF174673232A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{B02F0C35-970B-4D68-941F-456FD0834871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "congestion-tax-calculator-domain", "src\Domain\congestion-tax-calculator-domain\congestion-tax-calculator-domain.csproj", "{8DED56FD-EC82-4769-9958-C02FC26FB829}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{18643880-D04C-4B0B-B151-4A95499E174E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "congestion-tax-calculator-shared-domain", "src\Domain\congestion-tax-calculator-shared-domain\congestion-tax-calculator-shared-domain.csproj", "{B69B515C-B745-4DA8-BFEF-D1A8F153C78E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{1A15CFD5-E7B4-49CD-9C9E-B3499079F84F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "congestion-tax-calculator-persistence-ef", "src\Infrastructure\congestion-tax-calculator-persistence-ef\congestion-tax-calculator-persistence-ef.csproj", "{36864EA0-198A-41D1-A366-EA3AF7F06B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "congestion-tax-calculator-validation", "src\Infrastructure\congestion-tax-calculator-validation\congestion-tax-calculator-validation.csproj", "{9BBBCA6F-E864-4A51-8990-D37459D575F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4DADF5C6-6F42-44B8-A263-10013161AC6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "congestion-tax-calculator-service-test", "tests\congestion-tax-calculator-service-test\congestion-tax-calculator-service-test.csproj", "{905CA650-7BD0-4002-98E2-48C583BAAC76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{677C8154-B378-488F-9CC1-ED545ECC0369}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B09C372D-506C-4839-96FE-42CDBC8766FA} = {818EF3BB-D3CA-4BEB-A337-E8249C6DB3E2}
+		{B0442220-1A40-4B3C-A3BC-BF174673232A} = {B09C372D-506C-4839-96FE-42CDBC8766FA}
+		{B02F0C35-970B-4D68-941F-456FD0834871} = {818EF3BB-D3CA-4BEB-A337-E8249C6DB3E2}
+		{8833D252-B1A1-4DEB-8478-04F8634B6C03} = {B02F0C35-970B-4D68-941F-456FD0834871}
+		{18643880-D04C-4B0B-B151-4A95499E174E} = {818EF3BB-D3CA-4BEB-A337-E8249C6DB3E2}
+		{8DED56FD-EC82-4769-9958-C02FC26FB829} = {18643880-D04C-4B0B-B151-4A95499E174E}
+		{B69B515C-B745-4DA8-BFEF-D1A8F153C78E} = {18643880-D04C-4B0B-B151-4A95499E174E}
+		{1A15CFD5-E7B4-49CD-9C9E-B3499079F84F} = {818EF3BB-D3CA-4BEB-A337-E8249C6DB3E2}
+		{36864EA0-198A-41D1-A366-EA3AF7F06B59} = {1A15CFD5-E7B4-49CD-9C9E-B3499079F84F}
+		{9BBBCA6F-E864-4A51-8990-D37459D575F6} = {1A15CFD5-E7B4-49CD-9C9E-B3499079F84F}
+		{905CA650-7BD0-4002-98E2-48C583BAAC76} = {4DADF5C6-6F42-44B8-A263-10013161AC6D}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8833D252-B1A1-4DEB-8478-04F8634B6C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8833D252-B1A1-4DEB-8478-04F8634B6C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8833D252-B1A1-4DEB-8478-04F8634B6C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8833D252-B1A1-4DEB-8478-04F8634B6C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0442220-1A40-4B3C-A3BC-BF174673232A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0442220-1A40-4B3C-A3BC-BF174673232A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0442220-1A40-4B3C-A3BC-BF174673232A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0442220-1A40-4B3C-A3BC-BF174673232A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DED56FD-EC82-4769-9958-C02FC26FB829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DED56FD-EC82-4769-9958-C02FC26FB829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DED56FD-EC82-4769-9958-C02FC26FB829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DED56FD-EC82-4769-9958-C02FC26FB829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B69B515C-B745-4DA8-BFEF-D1A8F153C78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69B515C-B745-4DA8-BFEF-D1A8F153C78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69B515C-B745-4DA8-BFEF-D1A8F153C78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69B515C-B745-4DA8-BFEF-D1A8F153C78E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36864EA0-198A-41D1-A366-EA3AF7F06B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36864EA0-198A-41D1-A366-EA3AF7F06B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36864EA0-198A-41D1-A366-EA3AF7F06B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36864EA0-198A-41D1-A366-EA3AF7F06B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBBCA6F-E864-4A51-8990-D37459D575F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBBCA6F-E864-4A51-8990-D37459D575F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBBCA6F-E864-4A51-8990-D37459D575F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBBCA6F-E864-4A51-8990-D37459D575F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905CA650-7BD0-4002-98E2-48C583BAAC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905CA650-7BD0-4002-98E2-48C583BAAC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905CA650-7BD0-4002-98E2-48C583BAAC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905CA650-7BD0-4002-98E2-48C583BAAC76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
